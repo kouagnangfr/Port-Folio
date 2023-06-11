@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'theblacklist';
+    src: url('../Assets/The\ Blacklist.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'casanova';
+    src: url('../Assets/TheBlackCassanova.otf') ;
+}
+
+h1{
+    font-size: 2.5em;
+    font-family: theblacklist, cursive, serif;
+}
+
