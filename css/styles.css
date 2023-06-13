@@ -6,9 +6,83 @@
     font-family: 'casanova';
     src: url('../Assets/TheBlackCassanova.otf') ;
 }
+@font-face {
+    font-family: 'open sans';
+    src: url(../Assets/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body{
+    background-color: #f4f7f6;
+    font-family: 'open sans, serif';
+}
+header{
+    text-align: center;
+    background: #1d1d1d;
+    color: white;
+}
+
+section{
+    text-align: center;
+}
+
+h1:hover {
+    color : red;
+}
 
 h1{
     font-size: 2.5em;
     font-family: theblacklist, cursive, serif;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+h2{
+    font-family: 'open sans', serif;
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+nav{
+    text-align: center;
+    font-family: 'open sans';
+    background-color: white;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0, 0,5);
+    font-size: 1.1em;
+}
+
+li{
+    list-style-type: none;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+ul{
+    padding: 0;
+}
+
+p{
+    font-family: 'open sans';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+    
+}
+
+#Contact {
+        border : 1px black solid;
+        border-radius: 15px;
+
 }
 
