@@ -14,11 +14,15 @@
 body{
     background-color: #f4f7f6;
     font-family: 'open sans, serif';
+    padding: 0px;
+    margin: 0px;
 }
 header{
     text-align: center;
     background: #1d1d1d;
     color: white;
+    margin: 0px;
+    padding-bottom: 30px;
 }
 
 section{
@@ -33,27 +37,45 @@ h1{
     font-size: 2.5em;
     font-family: theblacklist, cursive, serif;
     text-shadow: 2px 2px 2px #000000;
+    margin-top: 0px;
+    padding-top: 30px;
+     
+   
+
 }
 
 h2{
     font-family: 'open sans', serif;
     font-size: 1.5em;
+    width: 400px;
+    margin: auto;
 }
 
 h3{
     font-size: 1.5em;
+    text-transform: uppercase;
+}
+h3::before{
+    content: '~';
+    color: grey;
+}
+h3::after{
+    content: '~';
+    color: grey;
 }
 
 nav{
     text-align: center;
-    font-family: 'open sans';
     background-color: white;
     box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0, 0,5);
     font-size: 1.1em;
+    padding: 15px;
 }
 
 li{
     list-style-type: none;
+    display: inline;
+    margin: 10px;
 }
 
 li:hover {
@@ -62,6 +84,7 @@ li:hover {
 
 ul{
     padding: 0;
+    display: inline;
 }
 
 p{
@@ -72,17 +95,43 @@ a{
     text-decoration: none;
     color: black;
 }
+/*a:visited{
+    color: red;
+}*/
 
 footer{
+    font-family: theblacklist, cursive, serif;
+    text-shadow: 2px 2px 2px #000000;
     background-color: #1d1d1d;
     color: white;
-    text-align: center;
-    
+    text-align: center;   
+    padding: 15px; 
+}
+
+footer:hover {
+    color : red;
 }
 
 #Contact {
-        border : 1px black solid;
-        border-radius: 15px;
+    border : 1px black solid;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
 
+#logo {
+    width: 80px;
+    height: 50px;
+    /*padding-bottom: 50px;*/
+    padding-top:10px ;
+}
+.separator {
+	width: 40px;
+	height: 1px;
+	margin: 15px auto;
+	display: block;
+	background: #999999;
+}
+*{
+    box-sizing :border-box;
 }
 
