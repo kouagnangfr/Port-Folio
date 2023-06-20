@@ -2,46 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Franck Kouagnang | Developper</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Franck Kougnang</title>
+        <!--**** Reset css ****-->
+    <link rel="stylesheet" href="./css/reset.css">
+        <!--**** Css lib-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!--**** main css ****-->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <h1>Franck Kouagnang</h1>
-        <span class = "separator"></span>
-        <h2>Full Stack developper & Graphic designer, Illustrator</h2>
-        <img id="logo" src="./img/logo.png" alt="">
-        
+        <nav class="navbar">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="logo">
+                        <a href="index.html">Franck <span>Kouagnang</span></a>
+                    </div>
+                    <ul class="menu">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home <span></span></a></li>
+                        <li class="nav-item"><a href="#About" class="nav-link">About <span></span></a></li>
+                        <li class="nav-item"><a href="#Services" class="nav-link"> Services<span></span></a></li>
+                        <li class="nav-item"><a href="#Portfolio" class="nav-link">Portfolio <span></span></a></li>
+                        <li class="nav-item"><a href="#Contact" class="nav-link">Contacts <span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <nav>
-            <ul>
-                <li><a href="#" title="Back to home">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#">About me</a></li>
+                <!-- **** Home page **** -->
+        <section class="home-section" id="home">
+            <ul class="header-social"> <!--===== Header Social =====-->
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             </ul>
-        </nav>
-        <section>
-            <h3>Welcome</h3>
-            <p>Bonjour, je suis un jeune programmeur ambitieux, prêt à me lancer dans des projets stimulants et à continuer d'apprendre au quotidien. Mon portfolio met en 
-            avant mes projets personnels, mes contributions à des équipes de développement et mes expériences de stage, où j'ai pu mettre en pratique mes compétences en
-             programmation. Explorez mon travail pour voir comment j'ai progressé en tant que programmeur junior, en développant des applications simples mais 
-             fonctionnelles et en renforçant ma compréhension des concepts clés de la programmation.</p> 
+            <div class="container">
+                <div class="row align-items-center" >
+                    <div class="home-text">
+                        <h4>Hello I'm</h4>
+                        <h1>Franck Kouagnang</h1>
+                        <span>Software Developer and Design graphic</span>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. At deleniti a
+                             veniam atque vero illum corporis rerum in, ea totam ducimus laborum inventore quos, 
+                             nulla labore deserunt assumenda? Minus, accusantium!
+                        </P>
+                        <a href="#" class="btn btn-1">Download cv</a>
+                    </div>
+                    <div class="home-image">
+                        <div class="img-box">
+                            <img src="./images/hero.png" alt="My picture">
+                        </div>
+                    </div>
+                </div><div class="header-shape"></div>   <!--Division color-->
+            </div>
+            
         </section>
-        <section>
-            <h3>Quelques projets phares</h3>
-        </section>
-        <section id="Contact">
-            <h3>Contact</h3>
-            <p>Vous pouvez me contacter en utilisant l'un des moyens suivants :</p>
-        </section>
-    </main>     
-    <footer >
-        <span>2023 &copy; Franck Kouagnang</span>
+    </main>
+    <footer>
+        <p>&copy;Portfolio | &copy;Collège La Cité</p>
+        <p id="developpeur">Développé par <strong>&lt;Franck Kouagnang&gt;</strong></p>
     </footer>
-    
+    <script src="./js/main.js"></script>
 </body>
 </html>

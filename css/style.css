@@ -1,0 +1,320 @@
+        /*===== Google Fonts =====*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+         /*===== Main Css =====*/
+:root
+{
+    --main-color: rgb(0, 110, 255);
+    --shadow-black-100 : 0 5px 15px rgba(0, 0, 0, 0,2);
+    --black1 : black;
+    --black2 : #646f87;
+    --black3 : #f7f7f7;
+    --black4 : rgba(0, 0, 0, 0,5);
+    --white : #fff;
+}
+
+body
+{
+    font-family: "Kaushan Script", cursive, serif;
+    font-size: 16px;
+    font-weight: normal;
+    
+    background-color: var(--white);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+}
+
+img
+{
+    vertical-align: middle;
+}
+
+.container
+{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.justify-content-between
+{
+    justify-content: space-between;
+}
+
+.align-items-center
+{
+    align-items: center;
+}
+
+.btn-1
+{
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border: none;
+    color: var(--white);
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all 0.3s ease-out ;
+}
+
+.btn-1:hover
+{
+    color: var(--white);
+    background-color:rgb(0, 191, 255) ;
+}
+
+                /*===== Barre de navigation =====*/
+.navbar
+{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.navbar.sticky
+{
+    padding: 12px 25px;
+    background-color: var(--white);
+    box-shadow: var(--black4);
+}
+
+.navbar .logo a 
+{
+    font-size: 1.5em;
+    color: var(--black1);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.navbar .logo a span
+{
+    color: var(--main-color);
+}
+
+.navbar .menu .nav-item
+{
+    display: inline-block;
+    position: relative;
+    margin-left: 36px;
+
+}
+
+.navbar .menu .nav-item .nav-link
+{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    display: blockS;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.navbar.sticky .menu .nav-item .nav-link
+{
+    color: var(--main-color);
+}
+
+.navbar .nav-item .nav-link span
+{
+    width: 0;
+    height: 4px;
+    background-color: var(--white);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s ease-out 0s;
+}
+
+.navbar .nav-item .nav-link span::before
+{
+    width: 0;
+    height: 4px;
+    content: '';
+    background-color: var(--white);
+    position: absolute;
+    left: 110%;
+    
+    border-radius: 50px;
+}
+
+.navbar .nav-item .nav-link span::after
+{
+    width: 0;
+    height: 6px;
+    content: '';
+    background-color: var(--white);
+    position: absolute;
+    left: 140%;
+    border-radius: 50px;
+}
+
+.navbar.sticky .nav-item a span, .navbar.sticky .nav-item a span::after, .navbar.sticky .nav-item a span::before
+{
+    background-color: var(--main-color) ;
+}
+
+.navbar .nav-item > .nav-link.active span, .navbar .nav-item:hover > .nav-link span
+{
+    opacity: 1;
+    visibility: visible;
+    width: 60%;
+}
+
+.navbar .nav-item > .nav-link.active span::before, .navbar .nav-item:hover > .nav-link span::before
+{
+    width: 20%;
+}
+
+.navbar .nav-item > .nav-link.active span::after, .navbar .nav-item:hover > .nav-link span::after
+{
+    width: 15%;
+}
+
+
+             /***** Home *****/
+
+.home-section
+{
+    position: relative;
+    background-color: var(--black4);
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+.header-social
+{
+    position: absolute;
+    top: 53%;
+    left: 50px;
+    transform: translateY(-53%);
+    border: 3px solid var(--main-color);
+    border-radius: 50px;
+}
+
+
+.header-social li a 
+{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 20px 15px;
+    color: rgba(100,111,135,0.58);
+    transition: all 0.3s ease-out 0s;
+}
+.header-social li a:hover
+{
+    color: var(--main-color);
+}
+
+.home-section .home-text, .home-section .home-image
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 25px;
+}
+
+.home-section .home-text h4
+{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: var(--main-color);
+}
+.home-section .home-text h1
+{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: var(--black1);
+}
+
+.home-section .home-text span
+{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black1);
+    font-weight: 800;
+    display: block;
+    margin-top: 15px;
+}
+
+.home-section .home-text p
+{
+    font-size: 16px;
+    color: var(--black2);
+    font-weight: 24px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.home-section .home-text .justify-content-between
+{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+.home-section .home-image .img-box img
+{
+    position: relative;
+    width: 80%;
+    z-index: 789;
+}
+
+.header-shape
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.header-shape::before
+{
+    position: absolute;
+    content: '';
+    width: 1000%;
+    height: 100%;
+    background-color: var(--main-color);
+    transform: skewx(20deg);
+    top:0;
+    left: 0;
+}
+
+footer{
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1em 1em;
+}
+
+strong:hover{
+    color: red;
+}
+
