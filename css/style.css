@@ -38,6 +38,7 @@ ul
 img
 {
     vertical-align: middle;
+    align-items: center;
 }
 
 .container
@@ -208,9 +209,9 @@ img
 .header-social
 {
     position: absolute;
-    top: 53%;
+    top: 60%;
     left: 50px;
-    transform: translateY(-53%);
+    transform: translateY(-55%);
     border: 3px solid var(--main-color);
     border-radius: 50px;
 }
@@ -243,10 +244,12 @@ img
     font-weight: 500;
     letter-spacing: 4px;
     color: var(--main-color);
+    color: var(--main-color);
 }
+
 .home-section .home-text h1
 {
-    font-size: 50px;
+    font-size: 50px; 
     font-weight: 700;
     margin-top: 15px;
     color: var(--black1);
@@ -306,7 +309,8 @@ img
     left: 0;
 }
 
-footer{
+footer
+{
     background-color: var(--main-color);
     color: white;
     text-align: center;
